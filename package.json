@@ -1,0 +1,24 @@
+{
+  "name": "message-app",
+  "version": "1.0.0",
+  "description": "Simple client-server message application",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "sqlite",
+    "docker"
+  ],
+  "author": "",
+  "license": "MIT"
+}
